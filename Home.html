@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Global Socio Economic Trend</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding a style for white menu button -->
+    <style>
+        .menu-button {
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        background-size: 1230px 600px;
+      }
+      
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #11100f;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f6f4f4;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #c9168a;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+  </style>
+</head>
+<body style="background-image: url('https://e3.365dm.com/22/11/2048x1152/skynews-world-population-global-population_5966420.jpg?20221114175446')">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Home.html">HomePage</a>
+        <a href="About.html">About the Group</a>
+        <a href="Contact.html">Contact Us</a>
+    </div>
+    
+    <!-- Using the class for white menu text -->
+    <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <div class="content">
+       
+      <h1>Population Effect on Global GDP along with the bloodtype distribution </h1>
+  
+      <marquee direction="left" scrollamount="8">
+          Vizualization the dataset using different tools
+      </marquee>
+          <button class="Pie Chart: D3.js" onclick="navigateTo('https://vizhub.com/PadmajaKodatii/14a46b5aa012473380c043c6d8a5fc86?mode=embed')">Pie Chart: D3.js</button>
+          <button class="Bar Chart: D3.js" onclick="navigateTo('https://vizhub.com/PadmajaKodatii/6135db48b0e442c6b5dca84e54a6a2cf?edit=files&file=index.html')">Bar Chart: D3.js</button>
+          <button class="Stacked Bar Chart: Tableau" onclick="navigateTo('https://public.tableau.com/app/profile/padmaja.kodati/viz/Project_Sheet_3/Tableau3?publish=yes')">Stacked Bar Chart: Tableau</button>
+          <button class="Symbol Maps : Tableau" onclick="navigateTo('https://public.tableau.com/app/profile/padmaja.kodati/viz/Project_Sheet_2/Tableau2?publish=yes')">Symbol Maps : Tableau</button>
+          <button class="Packed  Bubbles : Tableau" onclick="navigateTo('https://public.tableau.com/app/profile/padmaja.kodati/viz/Project_Sheet_1_17139311229410/Tableau1?publish=yes')">Packed  Bubbles : Tableau</button>
+          <button class="PowerBI All Graphs" onclick="navigateTo('https://app.powerbi.com/onedrive/open?pbi_source=ODSPViewer&driveId=b!l3Y62-FvVECwk0OO4qL8qHQRHrbUVeBJiNIHWSilzyjXT8Btz5VZSZzUC-IVWxyJ&itemId=01DFK5U33H6TOATUVAXRCJZUPNXFMAXQQM')">PowerBI All Graphs</button>
+      </div>
+  <script>
+      function navigateTo(url) {
+          window.location.href = url;
+      }
+  </script>
+
+</body>
+</html>
